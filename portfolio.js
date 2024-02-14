@@ -1,6 +1,6 @@
 showRandomXKCD();
 
-function showRandomXKCD() {git 
+function showRandomXKCD() { 
     const totalComics = 100; // Total number of comics you have
     const randomComicNumber = Math.floor(Math.random() * totalComics) + 2700; // Generate a random number between 1 and 100
     const imagePath = `xkcd_comics/${randomComicNumber}.png`; // Construct the path to a random image
