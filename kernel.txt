@@ -1,9 +1,9 @@
 print("""
 
-Hello World, i'm Bene!
+Hello World, I'm Bene!
 
 I made this little website to share interesting stuff I find on the internet and also for you to get to know me :)
 
 """)
 
-drawGraphics()
+renderGraphics()

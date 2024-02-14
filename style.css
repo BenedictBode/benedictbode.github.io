@@ -47,3 +47,14 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #000000;
 }
+
+.cursor {
+  opacity: 1;
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    opacity: 0;
+  }
+}
