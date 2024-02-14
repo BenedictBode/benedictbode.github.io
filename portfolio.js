@@ -1,13 +1,14 @@
-// Fetch the latest XKCD comic
-fetch('https://xkcd.com/info.0.json')
-  .then(response => response.json())
-  .then(data => {
-    document.getElementById('xkcd').innerHTML = `
-      <h2>${data.title}</h2>
-      <img src="${data.img}" alt="${data.alt}" style="max-width:100%;">
-    `;
-  })
-  .catch(error => console.error('Error loading XKCD comic:', error));
+showRandomXKCD();
+
+function showRandomXKCD() {git 
+    const totalComics = 100; // Total number of comics you have
+    const randomComicNumber = Math.floor(Math.random() * totalComics) + 2700; // Generate a random number between 1 and 100
+    const imagePath = `xkcd_comics/${randomComicNumber}.png`; // Construct the path to a random image
+
+    // Set the image source and link URL
+    document.getElementById('random-xkcd-img').src = imagePath;
+    document.getElementById('random-xkcd-link').href = `https://xkcd.com/${randomComicNumber}/`;
+}
 
 // Fetch top 3 Hacker News stories
 fetch('https://hacker-news.firebaseio.com/v0/topstories.json')
