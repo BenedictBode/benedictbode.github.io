@@ -1,4 +1,4 @@
-## My Personal Website
+## Portfolio Website
 
 live version [published on github.io](https://benedictbode.github.io/portfolio.html)
 
