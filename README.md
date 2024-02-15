@@ -1,5 +1,8 @@
-## HackerTyper
+## My Personal Website
 
-[hackertyper.net](https://hackertyper.net) is the original HackerTyper that was created back in 2011 as a fun little project. 
+live version [published on github.io](https://benedictbode.github.io/portfolio.html)
 
-Contributions are welcome but I am looking more at maintaining the project as a token more than improving on it(even if a lot of improvements could be made)
+inspired by [hackertyper](https://hackertyper.net)
+[github version](https://github.com/duiker101/Hacker-Typer)
+
+feel free to fork or copy my code :) 
