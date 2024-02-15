@@ -1,6 +1,6 @@
 $(function() {
     var textFilePath = "kernel.txt"; // Path to the text file
-    var typingPause = 70; // Time in ms between keystrokes (5 keys per second)
+    var typingPause = 50; // Time in ms between keystrokes (5 keys per second)
     var pauseDuration = 500; // Time in ms to pause at the end of each line
     var redirectUrl = "portfolio.html"; // URL to redirect to after typing
 

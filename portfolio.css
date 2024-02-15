@@ -13,14 +13,24 @@ body {
     max-width: 600px; /* Maximum width for large screens */
     background-color: #f9f9f9; /* Card background color */
     box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Simple shadow for depth */
-    padding: 20px; /* Padding inside the card */
-    margin: 20px 0; /* Margin top and bottom */
+    padding: 15px; /* Padding inside the card */
+    margin: 10px 0; /* Margin top and bottom */
     border-radius: 8px; /* Rounded corners for the card */
     text-align: center;
 }
 
+body.dark-mode {
+    background-color: #000000; /* Dark background */
+    color: white; /* Green text */
+}
+
+.dark-mode .card {
+    background-color: #1b1b1b; /* Slightly lighter dark for cards */
+    color: white; /* Green text for content in cards */
+}
+
 #random-xkcd-img {
-    width: 100%; /* Makes the image responsive */
+    max-width: 100%; /* Makes the image responsive */
     height: auto; /* Maintains the aspect ratio */
     border-radius: 8px; /* Optional: Adds rounded corners to the image */
 }
@@ -52,3 +62,80 @@ body {
 #hacker-news li {
     padding: 10px;
 }
+
+.icon-link, .icon-link:hover, .icon-link:visited {
+    color: black; /* Example: green for all states */
+    text-decoration: none; /* Removes underline */
+    font-size: 24px;
+}
+
+.dark-mode .icon-link,.dark-mode .icon-link:hover,.dark-mode .icon-link:visited {
+    color: white; /* Example: green for all states */
+    text-decoration: none; /* Removes underline */
+    font-size: 24px;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: absolute;
+    top: 10px; /* Adjust as needed for spacing from the top */
+    right: 10px; /* Adjust as needed for spacing from the right */
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #c2c2c2;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #00ff00;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #00ff00;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  

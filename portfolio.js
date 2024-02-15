@@ -30,3 +30,8 @@ fetch('https://hacker-news.firebaseio.com/v0/topstories.json')
     });
   })
   .catch(error => console.error('Error loading Hacker News stories:', error));
+
+  document.getElementById('dark-mode-toggle').addEventListener('change', function(event) {
+    document.body.classList.toggle('dark-mode', event.target.checked);
+  });
+  
